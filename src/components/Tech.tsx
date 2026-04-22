@@ -24,32 +24,32 @@ const stats = [
 
 export default function Tech() {
   return (
-    <section id="tech" className="relative py-32 overflow-hidden">
+    <section id="tech" className="relative py-40 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-[var(--surface)] to-black" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="mb-20">
-          <span className="inline-flex items-center gap-2 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-8">
+        <div className="mb-24">
+          <span className="inline-flex items-center gap-3 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-6 block">
             <span className="w-8 h-[1px] bg-[var(--accent)]" />
             Stack & Capacidades
           </span>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight">
             Tecnologia de
             <br />
             <span className="text-gradient">Ponta</span>
           </h2>
         </div>
 
-        <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4 mb-24">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mb-32">
           {techs.map((tech) => (
             <div
               key={tech.name}
-              className="group glass rounded-lg p-4 flex flex-col items-center gap-3 hover-lift cursor-default"
+              className="group glass rounded-lg py-8 px-4 flex flex-col items-center gap-4 hover-lift cursor-default"
             >
-              <span className="material-symbols-outlined text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors duration-300 text-2xl">
+              <span className="material-symbols-outlined text-[var(--muted)] group-hover:text-[var(--accent)] transition-colors duration-300 text-3xl">
                 {tech.icon}
               </span>
-              <span className="font-[family-name:var(--font-mono)] text-[10px] text-[var(--muted)] group-hover:text-[var(--fg)] transition-colors duration-300 tracking-wider">
+              <span className="font-[family-name:var(--font-mono)] text-xs text-[var(--muted)] group-hover:text-[var(--fg)] transition-colors duration-300 tracking-wider">
                 {tech.name}
               </span>
             </div>
@@ -58,8 +58,8 @@ export default function Tech() {
 
         <div className="grid grid-cols-2 md:grid-cols-4 gap-[1px] bg-[var(--border)]">
           {stats.map((stat) => (
-            <div key={stat.label} className="bg-black p-8 text-center">
-              <div className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl font-bold text-[var(--accent)] mb-2">
+            <div key={stat.label} className="bg-black p-12 text-center">
+              <div className="font-[family-name:var(--font-heading)] text-3xl md:text-4xl font-bold text-[var(--accent)] mb-3">
                 {stat.value}
               </div>
               <div className="font-[family-name:var(--font-body)] text-sm text-[var(--muted)] tracking-wide">

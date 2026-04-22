@@ -15,35 +15,35 @@ const features = [
 
 export default function Product() {
   return (
-    <section id="produto" className="relative py-32 overflow-hidden">
+    <section id="produto" className="relative py-40 overflow-hidden">
       <div className="absolute inset-0 grid-pattern opacity-50" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           <div>
-            <span className="inline-flex items-center gap-2 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-4">
+            <span className="inline-flex items-center gap-3 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-6 block">
               <span className="w-8 h-[1px] bg-[var(--accent)]" />
               Nosso Produto
             </span>
-            <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+            <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-8">
               CRM
               <br />
               <span className="text-gradient">Revolucionário</span>
             </h2>
-            <p className="text-[var(--muted)] text-lg leading-relaxed mb-8 font-[family-name:var(--font-body)] max-w-lg">
+            <p className="text-[var(--muted)] text-lg leading-relaxed mb-12 font-[family-name:var(--font-body)] max-w-lg">
               Um CRM pensado para a era moderna. Interface intuitiva,
               automações inteligentes e insights que realmente importam para
               o crescimento do seu negócio.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 mb-10">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mb-12">
               {features.map((feature) => (
                 <div
                   key={feature.label}
-                  className="flex items-center gap-3 group"
+                  className="flex items-center gap-4 group"
                 >
-                  <div className="w-8 h-8 flex items-center justify-center border border-[var(--border)] group-hover:border-[var(--accent)] transition-colors duration-300">
-                    <span className="material-symbols-outlined text-[var(--accent)] text-sm">
+                  <div className="w-10 h-10 shrink-0 flex items-center justify-center border border-[var(--border)] group-hover:border-[var(--accent)] transition-colors duration-300">
+                    <span className="material-symbols-outlined text-[var(--accent)] text-base">
                       {feature.icon}
                     </span>
                   </div>
@@ -67,8 +67,8 @@ export default function Product() {
 
           <div className="relative flex items-center justify-center">
             <div className="absolute inset-0 bg-gradient-to-r from-[var(--accent)] to-transparent opacity-[0.02] rounded-full blur-3xl" />
-            <div className="glass-accent rounded-2xl p-8 border-glow w-full max-w-lg mx-auto">
-              <div className="mb-4 flex items-center gap-2">
+            <div className="glass-accent rounded-2xl p-10 border-glow w-full max-w-lg mx-auto">
+              <div className="mb-5 flex items-center gap-2">
                 <div className="w-3 h-3 rounded-full bg-[#ff5f57]" />
                 <div className="w-3 h-3 rounded-full bg-[#febc2e]" />
                 <div className="w-3 h-3 rounded-full bg-[#28c840]" />
@@ -76,9 +76,9 @@ export default function Product() {
                   sigma-crm.app
                 </span>
               </div>
-              <div className="h-px bg-[var(--border)] mb-4" />
+              <div className="h-px bg-[var(--border)] mb-5" />
               <Scene3DSmall />
-              <div className="mt-4 font-[family-name:var(--font-mono)] text-[10px] text-[var(--accent)] text-center tracking-wider">
+              <div className="mt-5 font-[family-name:var(--font-mono)] text-[10px] text-[var(--accent)] text-center tracking-wider">
                 // interface em construção
               </div>
             </div>

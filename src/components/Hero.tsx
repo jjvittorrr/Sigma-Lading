@@ -19,7 +19,7 @@ export default function Hero() {
           </div>
 
           <h1
-            className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[0.9] tracking-tight mb-6 animate-fade-in-up"
+            className="font-[family-name:var(--font-heading)] text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold leading-[1.05] tracking-tight mb-12 animate-fade-in-up"
             style={{ animationDelay: "0.4s", opacity: 0 }}
           >
             Construímos

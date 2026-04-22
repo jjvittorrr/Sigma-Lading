@@ -41,37 +41,36 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="servicos" className="relative py-32 overflow-hidden">
+    <section id="servicos" className="relative py-40 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-black via-[var(--surface)] to-black" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
-        <div className="mb-20">
-          <span className="inline-flex items-center gap-2 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-8">
+        <div className="mb-24">
+          <span className="inline-flex items-center gap-3 font-[family-name:var(--font-mono)] text-xs text-[var(--accent)] tracking-[0.3em] uppercase mb-6 block">
             <span className="w-8 h-[1px] bg-[var(--accent)]" />
             O que fazemos
           </span>
-          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+          <h2 className="font-[family-name:var(--font-heading)] text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight mb-6">
             Serviços
           </h2>
-          <p className="text-[var(--muted)] mt-4 max-w-xl text-lg font-[family-name:var(--font-body)]">
+          <p className="text-[var(--muted)] max-w-xl text-lg font-[family-name:var(--font-body)] leading-relaxed">
             Toda e qualquer coisa voltada para desenvolvimento nós fazemos.
             Da ideia ao deploy, estamos com você.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[1px] bg-[var(--border)]">
-          {services.map((service, i) => (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {services.map((service) => (
             <div
               key={service.title}
-              className="group bg-black p-8 lg:p-10 hover:bg-[rgba(72,202,228,0.02)] transition-all duration-500 hover-lift"
-              style={{ animationDelay: `${i * 0.1}s` }}
+              className="group bg-[rgba(255,255,255,0.02)] border border-[var(--border)] p-10 hover:bg-[rgba(72,202,228,0.03)] hover:border-[rgba(72,202,228,0.15)] transition-all duration-500"
             >
-              <div className="w-12 h-12 flex items-center justify-center border border-[var(--border)] group-hover:border-[var(--accent)] transition-colors duration-300 mb-6">
-                <span className="material-symbols-outlined text-[var(--accent)] text-xl">
+              <div className="w-14 h-14 flex items-center justify-center border border-[var(--border)] group-hover:border-[var(--accent)] transition-colors duration-300 mb-8">
+                <span className="material-symbols-outlined text-[var(--accent)] text-2xl">
                   {service.icon}
                 </span>
               </div>
-              <h3 className="font-[family-name:var(--font-heading)] text-lg font-semibold mb-3 tracking-tight group-hover:text-[var(--accent)] transition-colors duration-300">
+              <h3 className="font-[family-name:var(--font-heading)] text-xl font-semibold mb-4 tracking-tight group-hover:text-[var(--accent)] transition-colors duration-300">
                 {service.title}
               </h3>
               <p className="text-[var(--muted)] text-sm leading-relaxed font-[family-name:var(--font-body)]">
