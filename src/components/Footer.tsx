@@ -7,10 +7,13 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
             <img
-              src="/logo.png"
+              src="/logo-white.png"
               alt="Sigma"
               className="h-8 w-auto object-contain"
             />
+            <span className="font-[family-name:var(--font-heading)] text-sm font-semibold tracking-wider uppercase">
+              Sigma
+            </span>
             <span className="font-[family-name:var(--font-mono)] text-[10px] text-[var(--muted)] tracking-wider ml-2">
               v1.0
             </span>

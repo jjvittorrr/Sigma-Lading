@@ -26,12 +26,15 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-3 group">
+        <a href="#" className="flex items-center gap-2 group">
           <img
-            src="/logo.png"
+            src="/logo-white.png"
             alt="Sigma"
             className="h-10 w-auto object-contain"
           />
+          <span className="font-[family-name:var(--font-heading)] text-lg font-semibold tracking-wider uppercase">
+            Sigma
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-10">
