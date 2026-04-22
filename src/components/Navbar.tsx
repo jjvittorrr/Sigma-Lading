@@ -26,15 +26,12 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 border border-[var(--accent)] flex items-center justify-center rotate-45 group-hover:bg-[var(--accent)] transition-all duration-300">
-            <span className="font-[family-name:var(--font-heading)] text-[var(--accent)] text-sm font-bold -rotate-45 group-hover:text-black transition-colors duration-300">
-              S
-            </span>
-          </div>
-          <span className="font-[family-name:var(--font-heading)] text-lg font-semibold tracking-wider uppercase">
-            Sigma
-          </span>
+        <a href="#" className="flex items-center gap-3 group">
+          <img
+            src="/logo.png"
+            alt="Sigma"
+            className="h-10 w-auto object-contain"
+          />
         </a>
 
         <div className="hidden md:flex items-center gap-10">
