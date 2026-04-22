@@ -33,9 +33,8 @@ export default function Hero() {
             className="text-[var(--muted)] text-lg md:text-xl max-w-lg leading-relaxed mb-10 font-[family-name:var(--font-body)] animate-fade-in-up"
             style={{ animationDelay: "0.6s", opacity: 0 }}
           >
-            Criação, sustentação e desenvolvimento de softwares que transformam
-            negócios. Toda e qualquer coisa voltada para desenvolvimento — nós
-            fazemos.
+            Softwares que transformam negócios. Criamos, sustentamos e
+            evoluímos — do início ao fim, do simples ao complexo.
           </p>
 
           <div
