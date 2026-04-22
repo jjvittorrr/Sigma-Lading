@@ -1,8 +1,20 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-accent: #48cae4;
+  --color-accent-dim: #48cae433;
+  --color-accent-glow: #48cae466;
+  --color-muted: #888888;
+  --color-surface: #0a0a0a;
+  --color-border: #1a1a1a;
+  --font-heading: var(--font-syne);
+  --font-body: var(--font-ibm-plex);
+  --font-mono: var(--font-jetbrains);
+}
+
 :root {
-  --bg: #000000;
-  --fg: #ffffff;
   --accent: #48cae4;
   --accent-dim: #48cae433;
   --accent-glow: #48cae466;
@@ -11,42 +23,21 @@
   --border: #1a1a1a;
 }
 
-@theme inline {
-  --color-background: var(--bg);
-  --color-foreground: var(--fg);
-  --color-accent: var(--accent);
-  --color-accent-dim: var(--accent-dim);
-  --color-accent-glow: var(--accent-glow);
-  --color-muted: var(--muted);
-  --color-surface: var(--surface);
-  --color-border: var(--border);
-  --font-heading: var(--font-syne);
-  --font-body: var(--font-ibm-plex);
-  --font-mono: var(--font-jetbrains);
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
-  background: var(--bg);
-  color: var(--fg);
+  background: #000;
+  color: #fff;
 }
 
 body {
-  background: var(--bg);
-  color: var(--fg);
+  background: #000;
+  color: #fff;
   font-family: var(--font-body), sans-serif;
-  overflow-x: hidden;
 }
 
 ::selection {
-  background: var(--accent);
-  color: var(--bg);
+  background: var(--color-accent);
+  color: #000;
 }
 
 ::-webkit-scrollbar {
@@ -54,16 +45,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: #000;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent-dim);
+  background: var(--color-accent-dim);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  background: var(--color-accent);
 }
 
 @keyframes fadeInUp {
@@ -90,15 +81,6 @@ body {
   to {
     opacity: 1;
     transform: translateX(0);
-  }
-}
-
-@keyframes pulse-glow {
-  0%, 100% {
-    box-shadow: 0 0 20px var(--accent-dim);
-  }
-  50% {
-    box-shadow: 0 0 40px var(--accent-glow);
   }
 }
 
@@ -130,10 +112,6 @@ body {
 
 .animate-slide-in {
   animation: slideIn 0.6s ease-out forwards;
-}
-
-.animate-pulse-glow {
-  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 .animate-float {
@@ -193,20 +171,6 @@ body {
 .hover-lift:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 30px rgba(72, 202, 228, 0.1);
-}
-
-.line-decoration {
-  position: relative;
-}
-
-.line-decoration::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 0;
-  width: 40px;
-  height: 2px;
-  background: var(--accent);
 }
 
 .grid-pattern {
